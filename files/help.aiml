@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>HELP</pattern>
+	    <template>
+            No worries, I am here for you!<br/>
+            Tell me what you need, for example ask me:<br/>
+            • Who are you?<br/>
+            • How can you assist me?
+        </template>
+    </category>
+    
+    <category>
+        <pattern>HELP *</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>* HELP</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>_ HELP *</pattern>
+        <template><srai>HELP</srai></template>
+    </category>
+    
+    <category>
+        <pattern>^ WHO ARE YOU ^</pattern>
+        <template>My name is Cyrus. The university IT department created me to help students like you find their dream job roles.</template>
+    </category>
+    
+    <!--<category>-->
+    <!--    <pattern>* WHO ARE YOU</pattern>-->
+    <!--    <template><srai>WHO ARE YOU</srai></template>-->
+    <!--</category>-->
+    
+    <category>
+        <pattern>HOW CAN YOU ASSIST ME</pattern>
+        <template>I will ask a question and will tell you which job role suits you better. Are you ready to proceed?</template>
+    </category>
+    
+    <category>
+        <pattern>*</pattern>
+        <that>ARE YOU READY TO PROCEED</that>
+        <template><srai>ASSIST ME</srai></template>
+    </category>
+    
+</aiml>

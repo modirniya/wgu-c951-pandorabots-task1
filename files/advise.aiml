@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+    <category>
+        <pattern>ASSIST ME</pattern>
+        <template>
+            What aspect of computer science listed below excites you the most?<br/><br/>
+	        Domains of interest:<br/>
+            1: Building software applications<br/>
+            2: Analyzing and interpreting data<br/>
+            3: Securing and protecting systems<br/>
+            4: Designing and optimizing system operations<br/>
+            5: Creating and designing websites<br/>
+        </template>
+    </category>
+    
+    <!--	<category>-->
+    <!--	    <pattern>MY NAME IS *</pattern>-->
+    <!--	    <template>Hello <set name="name"><star/></set></template>-->
+    <!--    </category>-->
+    <category>
+        <pattern>1</pattern>
+        <that>DOMAINS OF INTEREST *</that>
+        <template>
+            Software Developer: This role involves creating applications, solving programming challenges, and working with different programming languages.
+            <think><set name="role"></set>Software Developer</think>
+            <srai>FOLLOW UP QUESTION</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>2</pattern>
+        <that>DOMAINS OF INTEREST *</that>
+        <template>
+            Data Scientist: This role involves working with large datasets, using statistical tools, and finding insights to help make data-driven decisions.
+            <think><set name="role">Data Scientist</set></think>
+            <srai>FOLLOW UP QUESTION</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>3</pattern>
+        <that>DOMAINS OF INTEREST *</that>
+        <template>
+            Cybersecurity Analyst: This role involves safeguarding networks and data, investigating security breaches, and developing security protocols.
+            <think><set name="role">Cybersecurity Analyst</set></think>
+            <srai>FOLLOW UP QUESTION</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>4</pattern>
+        <that>DOMAINS OF INTEREST *</that>
+        <template>
+            Systems Analyst: This role involves analyzing system requirements, improving processes, and ensuring systems run efficiently.
+            <think><set name="role">Systems Analyst</set></think>
+            <srai>FOLLOW UP QUESTION</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>5</pattern>
+        <that>DOMAINS OF INTEREST *</that>
+        <template>
+            Web Developer: This role involves designing user-friendly web interfaces, writing code, and ensuring a great user experience.
+            <think><set name="role">Web Developer</set></think>
+            <srai>FOLLOW UP QUESTION</srai>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>FOLLOW UP QUESTION</pattern>
+        <template><br/>Does this role sound interesting to you?</template>
+    </category>
+    
+    
+    <category>
+        <pattern>YES</pattern>
+        <that>DOES THIS ROLE SOUND INTERESTING *</that>
+        <template>Wounderful! Please reach the university career development department for furthur instruction on how to develop your skills for this job role.</template>
+    </category>
+    
+    <category>
+        <pattern>NO</pattern>
+        <that>DOES THIS ROLE SOUND INTERESTING *</that>
+        <template>No worries! Let's start over.<br/><srai>ASSIST ME</srai></template>
+    </category>
+    
+</aiml>
