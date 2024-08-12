@@ -8,7 +8,28 @@
 	            <li>Hello!</li>
 	            <li>Hi!</li>
 	        </random>
+	        <br/> What is your name?
 	    </template>
+    </category>
+    
+    <category>
+    	    <pattern>MY NAME IS *</pattern>
+    	    <template>
+    	        Hello <set name="name"><star/></set>
+    	        <br/> Are you here to get help with your future career?
+    	        </template>
+    </category>
+    
+    <category>
+        <that>* FUTURE CAREER</that>
+        <pattern>YES</pattern>
+        <template>So let's get started! <br/><br/><srai>ASSIST ME</srai></template>
+    </category>
+    
+    <category>
+        <that>* FUTURE CAREER</that>
+        <pattern>NO</pattern>
+        <template>Unfortunately this is all I do at the moment.</template>
     </category>
     
     <category><pattern>_ HI *</pattern>
@@ -50,4 +71,20 @@
         <template><srai>HI</srai>
         </template>
     </category>
+    
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>You're welcome!</template>
+    </category>
+    
+    <category>
+        <pattern>THANK YOU *</pattern>
+        <template>
+            <srai>THANK YOU</srai>
+        </template>
+    </category>
+<category>
+    <pattern></pattern>
+    <template></template>
+</category>
 </aiml>

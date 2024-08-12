@@ -4,13 +4,13 @@
     <category>
         <pattern>ASSIST ME</pattern>
         <template>
-            What aspect of computer science listed below excites you the most?<br/><br/>
-	        Domains of interest:<br/>
-            1: Building software applications<br/>
-            2: Analyzing and interpreting data<br/>
-            3: Securing and protecting systems<br/>
-            4: Designing and optimizing system operations<br/>
-            5: Creating and designing websites<br/>
+            <b>What aspect of computer science listed below excites you the most?</b><br/><br/>
+	        Domains of interest:<br/><br/>
+            <b>1</b> Building software applications<br/>
+            <b>2</b> Analyzing and interpreting data<br/>
+            <b>3</b> Securing and protecting systems<br/>
+            <b>4</b> Designing and optimizing system operations<br/>
+            <b>5</b> Creating and designing websites<br/>
         </template>
     </category>
     
@@ -22,7 +22,7 @@
         <pattern>1</pattern>
         <that>DOMAINS OF INTEREST *</that>
         <template>
-            Software Developer: This role involves creating applications, solving programming challenges, and working with different programming languages.
+            <b>Software Developer</b> <br/>This role involves creating applications, solving programming challenges, and working with different programming languages.<br/>
             <think><set name="role"></set>Software Developer</think>
             <srai>FOLLOW UP QUESTION</srai>
         </template>
@@ -32,7 +32,7 @@
         <pattern>2</pattern>
         <that>DOMAINS OF INTEREST *</that>
         <template>
-            Data Scientist: This role involves working with large datasets, using statistical tools, and finding insights to help make data-driven decisions.
+            <b>Data Scientist</b><br/>This role involves working with large datasets, using statistical tools, and finding insights to help make data-driven decisions.<br/>
             <think><set name="role">Data Scientist</set></think>
             <srai>FOLLOW UP QUESTION</srai>
         </template>
@@ -42,7 +42,7 @@
         <pattern>3</pattern>
         <that>DOMAINS OF INTEREST *</that>
         <template>
-            Cybersecurity Analyst: This role involves safeguarding networks and data, investigating security breaches, and developing security protocols.
+            <b>Cybersecurity Analyst</b><br/>This role involves safeguarding networks and data, investigating security breaches, and developing security protocols.<br/>
             <think><set name="role">Cybersecurity Analyst</set></think>
             <srai>FOLLOW UP QUESTION</srai>
         </template>
@@ -52,7 +52,7 @@
         <pattern>4</pattern>
         <that>DOMAINS OF INTEREST *</that>
         <template>
-            Systems Analyst: This role involves analyzing system requirements, improving processes, and ensuring systems run efficiently.
+            <b>Systems Analyst</b><br/>This role involves analyzing system requirements, improving processes, and ensuring systems run efficiently.<br/>
             <think><set name="role">Systems Analyst</set></think>
             <srai>FOLLOW UP QUESTION</srai>
         </template>
@@ -62,7 +62,7 @@
         <pattern>5</pattern>
         <that>DOMAINS OF INTEREST *</that>
         <template>
-            Web Developer: This role involves designing user-friendly web interfaces, writing code, and ensuring a great user experience.
+            <b>Web Developer</b><br/>This role involves designing user-friendly web interfaces, writing code, and ensuring a great user experience.<br/>
             <think><set name="role">Web Developer</set></think>
             <srai>FOLLOW UP QUESTION</srai>
         </template>
@@ -86,4 +86,5 @@
         <template>No worries! Let's start over.<br/><srai>ASSIST ME</srai></template>
     </category>
     
+
 </aiml>

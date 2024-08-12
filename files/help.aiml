@@ -6,6 +6,7 @@
 	    <template>
             No worries, I am here for you!<br/>
             Tell me what you need, for example ask me:<br/>
+            • My name is [your name]<br/>
             • Who are you?<br/>
             • How can you assist me?
         </template>
@@ -47,4 +48,5 @@
         <template><srai>ASSIST ME</srai></template>
     </category>
     
+
 </aiml>
